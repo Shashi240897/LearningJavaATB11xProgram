@@ -17,6 +17,7 @@ public class SecondLargestArray {
     }
 
     public void method(int a[]) {
+int temp;
 
         System.out.println("Enter elements:");
         for (int i = 0; i <b; i++) {
@@ -28,12 +29,16 @@ public class SecondLargestArray {
             System.out.print(elements + ", ");
         }
 
-        for(int j=0;j<a.length;j++){
+        for(int j=0;j<a.length-1;j++){
 
-            for(int k=0;k<j+1;k++){
+            for(int k=1;k<a.length;k++){
                 if(a[j]>a[k]){
-
+                    temp=a[j];
+                    a[j]=a[k];
+                    a[k]=temp;
                 }
+
+
             }
         }
 
