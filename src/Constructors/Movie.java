@@ -25,6 +25,7 @@ public class Movie {
     }
 
     Movie(String director,long budget){
+
         this(director,"",budget);
     }
 
