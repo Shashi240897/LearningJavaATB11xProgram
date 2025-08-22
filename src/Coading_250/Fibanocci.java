@@ -21,5 +21,7 @@ public class Fibanocci {
             a=b;b=c;
 
         }
+
+
     }
 }
